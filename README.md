@@ -1,4 +1,8 @@
 # Build and Run
+Two arguments are required at start up:
+* directoryPath: the directory to be monitored 
+* pollTimeoutInMilliSeconds: waits until specified time for file creation events 
+
 Maven is the dependency manager. Please see pom.xml file for details.
 * Junit and Mockito is used for unit test
 * Apache commons-io lib is used for getting file's extension
@@ -15,7 +19,7 @@ In case of different statistic results, abstractions could be created for the re
 
 ### Classes
 * FileAnalyticsApp: starts the app with the parameterized configuration
-* DirectoryMonitor: abstraction of a monitor in case of non-local directory
+* DirectoryMonitor: abstraction of a monitor in case of new monitors like non-local directory
 * LocalDirectoryMonitor: watches registered directory for file created changes
 * FileParser: selects the parsing strategy
 * FileParseStrategy: parser abstraction
