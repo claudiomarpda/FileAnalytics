@@ -18,6 +18,7 @@ Maven is the dependency manager. Please see pom.xml file for details.
 The design was chosen for extensibility and single responsibility considering different file location and supported files. 
 The parsing strategy makes it easy to add a new parsing algorithm according to its extension.
 In case of different statistic results, abstractions could be created for the return type.
+Class diagram can be found in the _design_ directory.
 
 
 ### Classes
